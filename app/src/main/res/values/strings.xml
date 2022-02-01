@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">NeuralApp</string>
+
+    <string name="fragment_login_title">Welcome to house price prediction app</string>
+    <string name="fragment_login_username">Username</string>
+    <string name="fragment_login_password">Password</string>
+    <string name="fragment_login_no_account">Don\'t have an account?</string>
+    <string name="fragment_login_sign_in">Sign In</string>
+    <string name="fragment_login_register">Register</string>
+    <string name="fragment_login_error">Invalid User Data</string>
+
+    <string name="fragment_register_title">Create new account</string>
+    <string name="fragment_register_error">User already exists</string>
+    <string name="fragment_register_success">Successfully registered user! \nYou will be redirected now to login screen</string>
+
+    <string name="fragment_house_list_title">Houses in database:</string>
+    <string name="fragment_house_list_empty_list">No houses added yet</string>
+
+    <string name="fragment_details_id">ID:</string>
+    <string name="fragment_details_name">Bedrooms:</string>
+    <string name="fragment_details_type">Surface:</string>
+    <string name="fragment_details_serial_number">Outside area:</string>
+    <string name="fragment_details_ip">Condition:</string>
+    <string name="fragment_details_quality">Quality:</string>
+    <string name="fragment_details_price">Price:</string>
+</resources>

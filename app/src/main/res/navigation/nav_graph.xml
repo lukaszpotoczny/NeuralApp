@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.neuralapp.ui.login.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.neuralapp.ui.register.RegisterFragment"
+        android:label="RegisterFragment"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.neuralapp.ui.details.DetailsFragment"
+        android:label="DetailsFragment"
+        tools:layout="@layout/fragment_details" />
+    <fragment
+        android:id="@+id/menuFragment"
+        tools:layout="@layout/fragment_menu"
+        android:name="com.example.neuralapp.ui.menu.MenuFragment"
+        android:label="MenuFragment">
+        <action
+            android:id="@+id/action_menuFragment_to_addHouseFragment"
+            app:destination="@id/addHouseFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_houseListFragment"
+            app:destination="@id/houseListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addHouseFragment"
+        android:name="com.example.neuralapp.ui.add.AddHouseFragment"
+        android:label="AddHouseFragment"
+        tools:layout="@layout/fragment_add_house" />
+    <fragment
+        android:id="@+id/houseListFragment"
+        android:name="com.example.neuralapp.ui.cars.HouseListFragment"
+        android:label="HouseListFragment"
+        tools:layout="@layout/fragment_house_list">
+        <action
+            android:id="@+id/action_houseListFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+</navigation>
