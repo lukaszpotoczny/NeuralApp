@@ -1,4 +1,4 @@
-package com.example.neuralapp.ui.cars
+package com.example.neuralapp.ui.houses
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

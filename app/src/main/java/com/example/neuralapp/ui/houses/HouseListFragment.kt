@@ -1,4 +1,4 @@
-package com.example.neuralapp.ui.cars
+package com.example.neuralapp.ui.houses
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -34,7 +34,12 @@ class HouseListFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         subscribeToViewModel()
+
+        //TODO comment this
         viewModel.fakeList()
+
+        //TODO uncomment this
+        // viewModel.fetchHouses()
     }
 
     private fun subscribeToViewModel() {

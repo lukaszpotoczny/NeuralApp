@@ -10,7 +10,7 @@ import retrofit2.http.POST
 
 interface ApiService {
 
-    //TODO set url
+    //TODO set url - for example "/api/houses"
     @POST("url")
     fun calculateHousePrice(@Body houseRequest: HouseRequest): Observable<HouseResponse>
 

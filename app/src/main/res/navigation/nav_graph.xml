@@ -50,7 +50,7 @@
         tools:layout="@layout/fragment_add_house" />
     <fragment
         android:id="@+id/houseListFragment"
-        android:name="com.example.neuralapp.ui.cars.HouseListFragment"
+        android:name="com.example.neuralapp.ui.houses.HouseListFragment"
         android:label="HouseListFragment"
         tools:layout="@layout/fragment_house_list">
         <action

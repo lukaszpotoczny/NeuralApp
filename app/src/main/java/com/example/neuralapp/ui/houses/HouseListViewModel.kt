@@ -1,4 +1,4 @@
-package com.example.neuralapp.ui.cars
+package com.example.neuralapp.ui.houses
 
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
@@ -26,6 +26,8 @@ class HouseListViewModel @Inject constructor(
         0,
     )
     fun fakeList(){
+        houses.clear()
+
         houses.add(mockHouse)
         houses.add(mockHouse)
         houses.add(mockHouse)

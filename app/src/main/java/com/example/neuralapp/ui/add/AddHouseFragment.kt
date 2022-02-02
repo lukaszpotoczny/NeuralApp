@@ -52,14 +52,15 @@ class AddHouseFragment : Fragment(), AdapterView.OnItemSelectedListener {
             calculateButton.setOnClickListener {
                 progressBar.visibility = View.VISIBLE
 
+                //TODO comment this part
                 Handler().postDelayed({
                     priceText.text = "Estimated house price: 69 420$"
                     progressBar.visibility = View.GONE
                     priceText.visibility = View.VISIBLE
                 }, 3000)
 
-                //TODO here
-//                handleButton()
+                //TODO uncomment this
+                // handleButton()
             }
         }
     }
